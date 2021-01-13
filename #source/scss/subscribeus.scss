@@ -1,0 +1,55 @@
+.subscribeus {
+  @include ptb-adaptive(80, 100);
+  transition: all 0.5s ease;
+  background: #000000 url(../img/subscribeus/subscribeus_bg-main.jpg) center
+    center/cover no-repeat;
+  &:hover {
+    background: #000000 url(../img/subscribeus/subscribeus_bg-add.png) center
+      center/cover no-repeat;
+  }
+  // .subscribeus__title
+  &__title {
+    color: #fff;
+    text-align: center;
+  }
+
+  // .subscribeus__subtitle
+  &__subtitle {
+  }
+
+  // .subscribeus__submit-row
+  &__submit-row {
+    @include mt-adaptive(50);
+    // text-align: center;
+  }
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  // .subscribeus__input
+  &__input {
+    color: #fff;
+    margin-top: 10px;
+    flex: 0 1 358px;
+    padding: 5px;
+    width: 358px;
+    height: 40px;
+    background-color: transparent;
+    border: 1px solid #81868e;
+  }
+
+  // .subscribeus__submit-btn
+  &__submit-btn {
+    margin-top: 10px;
+    display: inline-block;
+    margin-left: 5px;
+    width: 151px;
+    height: 41px;
+    background-color: #19bd9a;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 0.14px;
+  }
+}

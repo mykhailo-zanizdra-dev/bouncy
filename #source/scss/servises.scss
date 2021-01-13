@@ -1,0 +1,159 @@
+.servises {
+  background-color: #f3f3f3;
+  @include ptb-adaptive(80, 136);
+  &__title {
+    text-align: center;
+  }
+
+  &__subtitle {
+  }
+
+  &__row {
+    display: flex;
+    @include mt-adaptive(60);
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+    @media (max-width: 500px) {
+    }
+  }
+
+  &__controls {
+  }
+
+  &__tab-row {
+    :first-child {
+      margin-top: 0px;
+    }
+    @media (max-width: 423px) {
+      display: flex;
+      justify-content: center;
+      li {
+        margin-top: 0px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  &__tab-item {
+    margin: 17px 10px 0 0;
+  }
+
+  &__content-body {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 1 495px;
+    @media (max-width: 767px) {
+      max-width: 495px;
+      margin: 0 auto;
+      flex: none;
+    }
+    @media (max-width: 423px) {
+      display: block;
+    }
+  }
+
+  &__content {
+    display: none;
+    flex: 0 1 393px;
+    @media (max-width: 423px) {
+      text-align: center;
+    }
+  }
+  &__content.active {
+    display: block;
+  }
+
+  &__content-title {
+  }
+
+  &__content-description {
+    max-width: 396px;
+    @include mt-adaptive(34, 30, 20, 10);
+    &_mark1 {
+      color: #19bd9a;
+      font-weight: 700;
+    }
+    &_mark2 {
+      color: #636971;
+      font-weight: 700;
+    }
+  }
+
+  &__content-text {
+    margin-top: 24px;
+    max-width: 396px;
+
+    &_mark1 {
+      color: #19bd9a;
+      font-weight: 700;
+    }
+  }
+
+  &__statusbars {
+    display: flex;
+    @include mt-adaptive(57);
+    flex: 0 1 450px;
+    justify-content: space-between;
+    @media (max-width: 767px) {
+      max-width: 450px;
+      margin-right: auto;
+      margin-left: auto;
+      flex: none;
+    }
+    @media (max-width: 423px) {
+      display: block;
+    }
+  }
+
+  #servises-branding-progressbar,
+  #web-design-progressbar,
+  #ui-ux-progressbar {
+    position: relative;
+    // display: table;
+  }
+  #web-design-progressbar {
+    margin: 0 10px 0 10px;
+    @media (max-width: 423px) {
+      margin: 10px 0;
+    }
+  }
+}
+.ring-progressbar {
+  position: relative;
+}
+.progress-ring__circle {
+  stroke-dashoffset: 0;
+  transform-origin: center;
+  transform: rotate(-90deg);
+  transition: stroke-dashoffset 0.3s;
+  stroke-dasharray: 0 10;
+}
+.progress-ring {
+  position: absolute;
+}
+.progress-ring__description {
+  margin-top: 22px;
+  color: #81868e;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.progress-ring__text {
+  position: absolute;
+  top: 60px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #81868e;
+  font-size: 25px;
+  .progress-ring__persent {
+    letter-spacing: 1.25px;
+  }
+  .progress-ring__persent-symbol {
+    font-size: 14px;
+    letter-spacing: 0.7px;
+  }
+}
