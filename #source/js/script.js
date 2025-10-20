@@ -24,26 +24,6 @@ document.querySelectorAll(".header__menu li").forEach( ( li ) => {
 })
 // END OF BURGER
 
-// function resizeMenu() {
-//   //console.log($("body").width());
-//   $(".header__nav-body").width($(".container-big").width() - 250);
-//   if(screen.width < 648) {
-//     $(".header__nav-body").width($(".container-big").width());
-//   //  window.removeEventListener("resize", resizeMenu);
-//   }
-// }
-
-// if (isIE()) {
-//   $(".header__nav").css({
-//     'position':'absolute',
-//     "left" : "0px",
-//     "top" : "0px",
-//     "left" : "0px"
-//   });
-//     resizeMenu();
-//     window.addEventListener("resize", resizeMenu); 
-//}
-
 // TABS /////////////////////////////////////////////////////////////////////////
 
 const createTabs = (tabItemsList, tabContentList) => {
@@ -319,80 +299,3 @@ document.querySelector('.map__btn').addEventListener('click', () => {
 })
 
 //////////////// END OF MAP BUTTON //////////////////////////
-
-      // MODAL WINDOWS/////////////////////////////////////////////////////////////////////////
-    /*  document.querySelectorAll("[data-modal=some-value]").forEach((item) => {
-        item.addEventListener("click", () => {
-          document.querySelector(".modal#some-id").classList.toggle("show");
-          document.querySelector(".overlay").classList.toggle("show");
-          document.querySelector("body").classList.toggle("lock");
-        });
-      });
-      document.querySelectorAll(".modal__close").forEach((item) => {
-        item.addEventListener("click", () => {
-          item.closest(".modal").classList.remove("show");
-          document.querySelector(".overlay").classList.remove("show");
-          document.querySelector("body").classList.remove("lock");
-        });
-      });*/
-            // END OF MODAL WINDOWS
-
-      // document.querySelectorAll(".some-button").forEach((item, i) => {
-      //   item.addEventListener("click", () => {
-      //   //  document.querySelector(".modal#some-id .some__class").textContent = document.querySelectorAll(".some__class")[i].textContent;
-      //     document.querySelector(".modal#bye").classList.toggle("show");
-      //     document.querySelector(".overlay").classList.toggle("show");
-      //     document.querySelector("body").classList.toggle("lock");
-      //   });
-      // });
-
-// FORM VALIDATION/////////////////////////////////////////////////////////////////////////
-/*function validateForm(form) {
-    $(form).validate({
-      errorClass: "form-error",
-      rules: {
-        name: {
-          required: true,
-          minlength: 2,
-        },
-        phone: "required",
-        email: {
-          required: true,
-          email: true,
-        },  
-      },
-      messages: {
-        name: {
-          required: "Ваше имя...",
-          minlength: jQuery.validator.format("Минимум {0} символа!"),
-        },
-        phone: "Ваш телефон...",
-        email: {
-          required: "Пожалуйста введите свою почту.",
-          email: "Формат почты: name@domain.com",
-        },
-      },
-    });
-  }
-      validateForm(".feed-form"); */
-// END OF FORM VALIDATION
-
-// FORM SUBMIT
-/*$("form").submit(function (e) {
-  e.preventDefault();
-  if (!$(this).valid()) return false;
-  $.ajax({
-    type: "POST",
-    url: "mailer/smart.php",
-    data: $(this).serialize(),
-  }).done(function () {
-    $(this).find("input").val("");
-    $(".modal#consult, .modal#bye").removeClass("show");
-    $(".modal#info").addClass("show");
-    $(".overlay").addClass("show");
-    $("body").addClass("lock");
-    $("form").trigger("reset");
-  });
-  return false;
-});*/
-// END OF FORM SUBMIT
